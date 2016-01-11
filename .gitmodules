@@ -1,0 +1,6 @@
+[submodule "er_sdk"]
+	path = er_sdk
+	url = https://github.com/exosite-ready/er_sdk.git
+[submodule "platforms/er_plat_microchip_wcm"]
+	path = platforms/er_plat_microchip_wcm
+	url = https://github.com/exosite-ready/er_plat_microchip_wcm.git
