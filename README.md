@@ -165,7 +165,7 @@ The Demo application is just that, an example to demonstrate this development ki
     value = 8 turns off 4th led
     ```
 
-4. It sends the value of the potentiometer every 5 seconds
+* It sends the value of the potentiometer every 5 seconds
 
 
 ## Setting up the WiFi Network Connection
@@ -205,16 +205,24 @@ The Demo application is just that, an example to demonstrate this development ki
 
    ![image](assets/device_dashboard_running.png)
 
-3. If the board fails to activate, you may need to re-enable the client in Portals or press the reset button on the board. See the following for debug terminal output:
+3. **Success.**  You can now use the Portal application to interact with the board, add custom dashboards, server side Lua scripts, more data ports, and events/alerts.  The device application code can also be customized to add new features that meet your device needs.
 
-   _The following message shows up in the terminal: "Error [-106]: Activate request returned error" _
-
-   _If you see "Error [-107]: Activate request returned error" this means your device was not yet added to the Server; please follow the instructions in Cloud setup: step 1 and 2_
-
-4. **Success.**  You can now use the Portal application to interact with the board, add custom dashboards, server side Lua scripts, more data ports, and events/alerts.  The device application code can also be customized to add new features that meet your device needs.
    * [Exosite Documentation](http://docs.exosite.com/)
 
+
+
 ## Notes
+### Troubleshooting:
+If the board fails to activate, you may need to re-enable the client in Portals or press the reset button on the board. See the following debug terminal output conditions:
+
+   * _The following message shows up in the terminal: "Error [-106]: Activate request returned error"_
+
+     This means the device needs to be re-enabled in the Exosite Platform.  You can use the Portals web application for this.  
+
+   * _If you see "Error [-107]: Activate request returned error"_
+
+     This means your device was not yet added to the platform and claimed by a owner; please follow the instructions in Cloud setup: step 1 and 2
+
 ### Debug Terminal (Optional):
 1. Open serial terminal application with baudrate of 115200.
 2. Press WCM S6. Observe MAC information if needed.
@@ -225,6 +233,9 @@ The Demo application is just that, an example to demonstrate this development ki
 3. Turn on the board
 4. Keep pressing S1 until D1 is turned on
 5. Now you can reconfigure the AP settings with the method in chapter #Network Setup
+
+### Re-progamming the board
+When you program the board, it removes the Exosite Platform CIK, which is a private device key.  If the device was already activated, it will need to be re-enabled through the Portals web application.
 
 # Support
 If you are running into problems, please feel free to check out our [developer community forum](https://community.exosite.com/c/hardware-platforms/microchip-kits) or use our [support site](https://support.exosite.com).
