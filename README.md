@@ -4,7 +4,7 @@ In addition, there is a demo application that is the default build for this VFP.
 
 ![image](assets/wcmkit_portal_dashboard.png)
 
-Already built or using the binary? [Jump to Running the Demo Application](#running-the-demo) section.
+Already built or want to use a pre-built binary? [Jump to Running the Demo Application](#running-the-demo) section.
 
 # VFP Installation and Build Guide
 ![image](assets/setup.JPG)
@@ -85,6 +85,7 @@ _Note that any commands shown below starting with `>` represent running the comm
 ## What you need to flash the kit and run the demo
 
 * A pre-built binary file for the demo application. (See steps above to build yourself or pre-built binaries in the repository)
+  * Prebuilt Binaries: https://github.com/exosite-ready/er_vfp_microchip_wcm/releases
 * [Microchip WCM Development Kit 1](http://www.microchipdirect.com/ProductSearch.aspx?keywords=dm182020)
 * USB cable
 * An account on [microchip.exosite.com](https://microchip.exosite.com)
@@ -104,7 +105,7 @@ _Note that any commands shown below starting with `>` represent running the comm
 ## Flashing the Firmware
 ### Using MPLAB IPE
 If using a pre-built binary, you can choose to use the MPLAB IDE or a simpler tool called MPLAB IPE.
-1. Download this repository and identify the the binary .hex file [er_microchip_wcm.hex](er_microchip_wcm.hex) for use of programming the hardware.
+1. Download the pre-built binary zip file (e.g. EmbeddedClient-Microchip-WCM_prebuilt_binary_x-x-x.zip), unzip it,  and identify the the binary .hex file for use of programming the hardware.  Pre-built binaries are found in [Releases](https://github.com/exosite-ready/er_vfp_microchip_wcm/releases)
 2. Open "MPLAB IPE" v2.35 or greater - This is a programming tool from Microchip installed with the MPLAB IDE Install.
 3. Select "Device" -> PIC32MX695F512H
 4. Select "Tool" -> PICkit3
