@@ -105,28 +105,41 @@ _Note that any commands shown below starting with `>` represent running the comm
 ## Flashing the Firmware
 ### Using MPLAB IPE
 If using a pre-built binary, you can choose to use the MPLAB IDE or a simpler tool called MPLAB IPE.
+
 1. Download the pre-built binary zip file (e.g. EmbeddedClient-Microchip-WCM_prebuilt_binary_x-x-x.zip), unzip it,  and identify the the binary .hex file for use of programming the hardware.  Pre-built binaries are found in [Releases](https://github.com/exosite-ready/er_vfp_microchip_wcm/releases)
+
 2. Open "MPLAB IPE" v2.35 or greater - This is a programming tool from Microchip installed with the MPLAB IDE Install.
+
 3. Select "Device" -> PIC32MX695F512H
+
 4. Select "Tool" -> PICkit3
+
 4. Press "Connect" button.
    ![image](/assets/ipe_setup.png)
+
 5. You should see the message "Connecting to MPLAB PICkit 3..."
+
 6. Press "Browse" button, and choose the downloaded .hex file "ec_microchip_wcm-x.y.z.hex",
    where x.y.z is the version number.
+
 7. Press "Program" button.
+
    ![image](/assets/ipe_programming.png)
+
 8. After programming, WCM D1 will be on;  if the board could connect with wifi to an AP D5 will be on, D1 will be off
    ![image](assets/wcmkit_programmed.JPG)
 
 ### Using MPLAB IDE
 If using a pre-built binary, you can choose to use the MPLAB IDE or a simpler tool called MPLAB IPE.
+
 1. Open the project `EmbeddedClient-Microchip-WCM` from MPLAB IDE
 
    ![MPLAB](/assets/mplab_open_project.png)
 
 2. Make sure the power Switch S5 on WCM board is turned to USB to power board.
+
 3. Verify PICkit3 is connected to WCM board and to your computer via USB. (Note: Default is PICkit3 does not power board)
+
 4. Press 'Make and Program Device' Button
 
    ![MPLAB IDE](/assets/mplab_ide_program.png)
