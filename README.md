@@ -1,5 +1,5 @@
 # Summary
-This is an ExostieReady™ Embedded SDK Client VFP (Vendor Framework Port) for the Microchip WCM board.
+This is an ExositeReady™ Embedded SDK Client VFP (Vendor Framework Port) for the Microchip WCM board.
 In addition, there is a demo application that is the default build for this VFP.  This readme guide will explain how to build and run the demo.  
 
 ![image](assets/wcmkit_portal_dashboard.png)
