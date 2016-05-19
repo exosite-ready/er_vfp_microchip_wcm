@@ -86,7 +86,7 @@ _Note that any commands shown below starting with `>` represent running the comm
 
 * A pre-built binary file for the demo application. (See steps above to build yourself or pre-built binaries in the repository)
   * Prebuilt Binaries: https://github.com/exosite-ready/er_vfp_microchip_wcm/releases
-* [Microchip WCM Development Kit 1](http://www.microchipdirect.com/ProductSearch.aspx?keywords=dm182020)
+* [Microchip WCM Development Kit 1](http://www.microchipdirect.com/ProductSearch.aspx?keywords=dm182023)
 * USB cable
 * An account on [microchip.exosite.com](https://microchip.exosite.com)
 * [PICkit 3](http://www.microchip.com/Developmenttools/ProductDetails.aspx?PartNO=PG164130)
